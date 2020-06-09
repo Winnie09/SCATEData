@@ -1,0 +1,17 @@
+Package: SCATE
+Type: Package
+Title: SCATE: Single-cell ATAC-seq Signal Extraction and Enhancement
+Version: 0.0
+Date: 2020-05-01
+Author: Zhicheng Ji, Weiqiang Zhou, Wenpin Hou, Hongkai Ji
+Maintainer: Wenpin Hou <wp.hou3@gmail.edu>
+Description: SCATE_Anno is an AnnotationHub package for SCATE which is a software tool for extracting and enhancing the sparse and discrete Single-cell ATAC-seq Signal.
+License: GPL(>=2)
+VignetteBuilder: knitr
+Encoding: UTF-8
+Remotes: bioc::3.8/GenomicAlignments
+Depends: knitr, GenomicAlignments, GenomicRanges, Rtsne, mclust, parallel,
+        preprocessCore, splines, splines2, xgboost, AnnotationHubData, AnnotationHub
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2019-05-01 13:54:27 UTC; Wenpin Hou
