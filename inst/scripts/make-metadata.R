@@ -19,8 +19,10 @@ df <- lapply(af, function(f){
     DataProvider = "GEO",
     Maintainer = "Wenpin Hou <wp.hou3@gmail.com>",
     RDataClass = "NA",
-    DispatchClass = "BAM",
+    DispatchClass = "BamFile",
     ResourceName = paste0("example/", f), 
+    RDataPath = paste0('SCATE_Anno/tree/master/inst/extdata/',f),
+    Tags = 'bam',
     stringsAsFactors = F)
 })
 df1 <- do.call(rbind, df)
@@ -31,7 +33,7 @@ df2 <- data.frame(
     Description = "hg19 annotation file for SCATE",
     BiocVersion = "3.11",
     Genome = "hg19",
-    SourceType = "R list",
+    SourceType = "RDS",
     SourceUrl = "https://github.com/zji90/SCATE/tree/master/inst/extdata",
     SourceVersion = "Jan 01 2019",
     Species = "Homo sapiens",
@@ -40,8 +42,10 @@ df2 <- data.frame(
     DataProvider = "SCATE",
     Maintainer = "Wenpin Hou <wp.hou3@gmail.com>",
     RDataClass = "NA",
-    DispatchClass = "R list",
+    DispatchClass = "Rds",
     ResourceName = "hg19.rds", 
+    RDataPath = 'SCATE_Anno/tree/master/inst/extdata/hg19.rds',
+    Tags = 'hg19:annotation',
     stringsAsFactors = F)
 
 df3 <- data.frame(
@@ -49,26 +53,29 @@ df3 <- data.frame(
     Description = "mm10 annotation file for SCATE",
     BiocVersion = "3.11",
     Genome = "mm10",
-    SourceType = "R list",
+    SourceType = "RDS",
     SourceUrl = "https://github.com/zji90/SCATE/tree/master/inst/extdata",
     SourceVersion = "Jan 01 2019",
-    Species = "Homo sapiens",
+    Species = "Mus musculus",
     TaxonomyId = 10090,
     Coordinate_1_based = TRUE,
     DataProvider = "SCATE",
     Maintainer = "Wenpin Hou <wp.hou3@gmail.com>",
     RDataClass = "NA",
-    DispatchClass = "R list",
+    DispatchClass = "Rds",
     ResourceName = "mm10.rds", 
+    RDataPath = 'SCATE_Anno/tree/master/inst/extdata/mm10.rds',
+    Tags = 'mm10:annotation',
     stringsAsFactors = F)
 
 meta = rbind(df1, df2, df3)
-str(meta)
 ## Not run: 
 ## Write the data out and put in the inst/extdata directory.
 write.csv(meta, file="/Users/wenpinhou/Dropbox/SCATE/package/SCATE_Anno/inst/extdata/metadata.csv", row.names=FALSE)
 
 ## Test the validity of metadata.csv
-# makeAnnotationHubMetadata("path/to/mypackage")
+# library(AnnotationHubData)
+makeAnnotationHubMetadata("/Users/wenpinhou/Dropbox/SCATE/package/SCATE_Anno")
 
 ## End(Not run)
+
