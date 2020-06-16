@@ -1,6 +1,6 @@
-Package: SCATE
+Package: SCATEData
 Type: Package
-Title: SCATE: Single-cell ATAC-seq Signal Extraction and Enhancement
+Title: Data for SCATE (Single-cell ATAC-seq Signal Extraction and Enhancement)
 Version: 0.0
 Date: 2020-05-01
 Author: Zhicheng Ji, Weiqiang Zhou, Wenpin Hou, Hongkai Ji
