@@ -3,10 +3,12 @@
 ## In the case of multiple resources, the arguments below would be character
 ## vectors that produced multiple rows in the data.frame.
 
-af <- list.files('/Users/wenpinhou/Dropbox/SCATE/package/SCATE_Anno/inst/extdata/example')
+af <- list.files('/Users/wenpinhou/Dropbox/SCATE/package/SCATEData/inst/extdata/')
+af <- af[grepl('bam',af)]
+af <- af[!grepl('bai', af)]
 df <- lapply(af, function(f){
     data.frame(
-    Title = paste0("example/", f),
+    Title = f,
     Description = "bam file for single-cell ATAC-seq data",
     BiocVersion = "3.11",
     Genome = "hg19",
@@ -18,10 +20,10 @@ df <- lapply(af, function(f){
     Coordinate_1_based = TRUE,
     DataProvider = "GEO",
     Maintainer = "Wenpin Hou <wp.hou3@gmail.com>",
-    RDataClass = "NA",
+    RDataClass = "BamFile",
     DispatchClass = "BamFile",
     ResourceName = paste0("example/", f), 
-    RDataPath = paste0('SCATE_Anno/tree/master/inst/extdata/',f),
+    RDataPath = paste0('SCATEData/tree/master/inst/extdata/',f, ':SCATEData/tree/master/inst/extdata/', sub('.bam', '.bam.bai', f)),
     Tags = 'bam',
     stringsAsFactors = F)
 })
@@ -41,10 +43,10 @@ df2 <- data.frame(
     Coordinate_1_based = TRUE,
     DataProvider = "SCATE",
     Maintainer = "Wenpin Hou <wp.hou3@gmail.com>",
-    RDataClass = "NA",
+    RDataClass = "list",
     DispatchClass = "Rds",
     ResourceName = "hg19.rds", 
-    RDataPath = 'SCATE_Anno/tree/master/inst/extdata/hg19.rds',
+    RDataPath = 'SCATEData/tree/master/inst/extdata/hg19.rds',
     Tags = 'hg19:annotation',
     stringsAsFactors = F)
 
@@ -61,21 +63,23 @@ df3 <- data.frame(
     Coordinate_1_based = TRUE,
     DataProvider = "SCATE",
     Maintainer = "Wenpin Hou <wp.hou3@gmail.com>",
-    RDataClass = "NA",
+    RDataClass = "list",
     DispatchClass = "Rds",
     ResourceName = "mm10.rds", 
-    RDataPath = 'SCATE_Anno/tree/master/inst/extdata/mm10.rds',
+    RDataPath = 'SCATEData/tree/master/inst/extdata/mm10.rds',
     Tags = 'mm10:annotation',
     stringsAsFactors = F)
 
 meta = rbind(df1, df2, df3)
 ## Not run: 
 ## Write the data out and put in the inst/extdata directory.
-write.csv(meta, file="/Users/wenpinhou/Dropbox/SCATE/package/SCATE_Anno/inst/extdata/metadata.csv", row.names=FALSE)
+write.csv(meta, file="/Users/wenpinhou/Dropbox/SCATE/package/SCATEData/inst/extdata/metadata.csv", row.names=FALSE)
 
 ## Test the validity of metadata.csv
 # library(AnnotationHubData)
-makeAnnotationHubMetadata("/Users/wenpinhou/Dropbox/SCATE/package/SCATE_Anno")
+# library(ExperimentHub)
+# library(ExperimentHubData)
+makeAnnotationHubMetadata("/Users/wenpinhou/Dropbox/SCATE/package/SCATEData")
 
 ## End(Not run)
 
