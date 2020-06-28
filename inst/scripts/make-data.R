@@ -12,7 +12,7 @@
 #' @param genomerange Data frame with two columns. First column is the chromosome and second column is the length of the genome. Only useful when datapath is NULL. Example is https://genome.ucsc.edu/goldenpath/help/hg19.chrom.sizes
 #' @export
 #' @import GenomicAlignments
-#' @author Zhicheng Ji, Weiqiang Zhou, Hongkai Ji <zji4@@zji4.edu>
+#' @author Zhicheng Ji, Weiqiang Zhou, Wenpin Hou, Hongkai Ji <zji4@@zji4.edu>
 
 makedatabase <- function(datapath,savepath,bamfile=NULL,cre=NULL,genome='hg19',genomerange=NULL) {
       

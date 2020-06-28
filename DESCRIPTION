@@ -5,7 +5,7 @@ Version: 0.99.0
 Date: 2020-05-01
 Author: Zhicheng Ji, Weiqiang Zhou, Wenpin Hou, Hongkai Ji
 Maintainer: Wenpin Hou <wp.hou3@gmail.edu>
-Description: SCATE_Anno is an AnnotationHub package for SCATE which is a software tool for extracting and enhancing the sparse and discrete Single-cell ATAC-seq Signal.
+Description: SCATEData is an ExperimentHub package for SCATE which is a software tool for extracting and enhancing the sparse and discrete Single-cell ATAC-seq Signal.
 License: GPL(>=2)
 VignetteBuilder: knitr
 Encoding: UTF-8
