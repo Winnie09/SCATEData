@@ -9,8 +9,8 @@ af <- af[!grepl('bai', af)]
 df <- lapply(af, function(f){
     data.frame(
     Title = f,
-    Description = "bam file for single-cell ATAC-seq data",
-    BiocVersion = "3.11",
+    Description = "Bam file for single-cell ATAC-seq data (GEO Accession GSE65360). Original .fastq files were downloaded and then alignments were performed to obtained these files",
+    BiocVersion = "3.12",
     Genome = "hg19",
     SourceType = "BAM",
     SourceUrl = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE65360",
@@ -22,8 +22,8 @@ df <- lapply(af, function(f){
     Maintainer = "Wenpin Hou <wp.hou3@gmail.com>",
     RDataClass = "BamFile",
     DispatchClass = "BamFile",
-    ResourceName = paste0("example/", f), 
-    RDataPath = paste0('SCATEData/tree/master/inst/extdata/',f, ':SCATEData/tree/master/inst/extdata/', sub('.bam', '.bam.bai', f)),
+    ResourceName =  f, 
+    RDataPath = paste0('SCATEData/',f, ':SCATEData/', sub('.bam', '.bam.bai', f)),
     Tags = 'bam',
     stringsAsFactors = F)
 })
@@ -33,7 +33,7 @@ str(df1)
 df2 <- data.frame(
     Title = 'hg19 annotation file',
     Description = "hg19 annotation file for SCATE",
-    BiocVersion = "3.11",
+    BiocVersion = "3.12",
     Genome = "hg19",
     SourceType = "RDS",
     SourceUrl = "https://github.com/zji90/SCATE/tree/master/inst/extdata",
@@ -46,14 +46,14 @@ df2 <- data.frame(
     RDataClass = "list",
     DispatchClass = "Rds",
     ResourceName = "hg19.rds", 
-    RDataPath = 'SCATEData/tree/master/inst/extdata/hg19.rds',
+    RDataPath = 'SCATEData/hg19.rds',
     Tags = 'hg19:annotation',
     stringsAsFactors = F)
 
 df3 <- data.frame(
     Title = 'mm10 annotation file',
     Description = "mm10 annotation file for SCATE",
-    BiocVersion = "3.11",
+    BiocVersion = "3.12",
     Genome = "mm10",
     SourceType = "RDS",
     SourceUrl = "https://github.com/zji90/SCATE/tree/master/inst/extdata",
@@ -66,7 +66,7 @@ df3 <- data.frame(
     RDataClass = "list",
     DispatchClass = "Rds",
     ResourceName = "mm10.rds", 
-    RDataPath = 'SCATEData/tree/master/inst/extdata/mm10.rds',
+    RDataPath = 'SCATEData/mm10.rds',
     Tags = 'mm10:annotation',
     stringsAsFactors = F)
 

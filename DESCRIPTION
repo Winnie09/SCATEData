@@ -9,8 +9,13 @@ Description: SCATEData is an ExperimentHub package for SCATE which is a software
 License: GPL(>=2)
 VignetteBuilder: knitr
 Encoding: UTF-8
-Depends: GenomicAlignments, GenomicRanges
+biocViews: 
+	ExperimentHub, 
+	ExperimentData
+Depends: 
+	GenomicAlignments,
+	GenomicRanges
 Suggests: 
-    knitr, 
-    rmarkdown
+	knitr, 
+	rmarkdown
 NeedsCompilation: no
