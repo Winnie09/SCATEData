@@ -79,7 +79,7 @@ write.csv(meta, file="/Users/wenpinhou/Dropbox/SCATE/package/SCATEData/inst/extd
 # library(AnnotationHubData)
 # library(ExperimentHub)
 # library(ExperimentHubData)
-makeAnnotationHubMetadata("/Users/wenpinhou/Dropbox/SCATE/package/SCATEData")
+# makeAnnotationHubMetadata("/Users/wenpinhou/Dropbox/SCATE/package/SCATEData")
 
 ## End(Not run)
 
