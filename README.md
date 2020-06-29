@@ -10,6 +10,17 @@ For more details, see our paper describing the `SCATE` package:
 
 - [Zhicheng Ji, Weiqiang Zhou, Hongkai Ji (2019), *Single-cell ATAC-seq Signal Extraction and Enhancement with SCATE*, bioRxiv, v1.](https://www.biorxiv.org/content/10.1101/795609v1)
 
+## Installation
+
+The `SCATEData` package is freely available from [Bioconductor](http://bioconductor.org/packages/SCATEData), and can be installed by following standard Bioconductor package installation procedures:
+
+```{r}
+# install BiocManager (if not already installed)
+install.packages("BiocManager")
+
+# install HDCytoData package
+BiocManager::install("SCATEData")
+```
 
 
 ## Vignettes
@@ -22,17 +33,6 @@ Additional details are provided in the following vignettes, available from the [
 For details on the datasets, see the manual page by typing `??SCATEData` for each dataset available within the package, or the metadata from the `ExperimentHub` database (see "SCATEData package" vignette).
 
 
-## Availability and installation
-
-The `SCATEData` package is freely available from [Bioconductor](http://bioconductor.org/packages/SCATEData), and can be installed by following standard Bioconductor package installation procedures:
-
-```{r}
-# install BiocManager (if not already installed)
-install.packages("BiocManager")
-
-# install HDCytoData package
-BiocManager::install("SCATEData")
-```
 
 ## Issues 
 Please open an issue in this repository if you have any questions or need any assistance regarding this package. 
