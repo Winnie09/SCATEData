@@ -39,8 +39,7 @@ Please open an issue in this repository if you have any questions or need any as
 
 ## Citation
 
-Please cite the following paper:
+If you find this package useful, please cite the following paper:
 
-- [Zhicheng Ji, Weiqiang Zhou, Hongkai Ji (2019), *Single-cell ATAC-seq Signal Extraction and Enhancement with SCATE*, bioRxiv, v1.](https://www.biorxiv.org/content/10.1101/795609v1)
-
+- [Zhicheng Ji, Weiqiang Zhou, Wenpin Hou, Hongkai Ji\*, *Single-cell ATAC-seq Signal Extraction and Enhancement with SCATE*, Genome Biol 21, 161 (2020).](https://doi.org/10.1186/s13059-020-02075-3)
 
