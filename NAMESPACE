@@ -8,6 +8,5 @@ exportPattern(".")
 import(
   GenomicAlignments,
   GenomicRanges,
-  ExperimentHub,
-  ExperimentData
+  ExperimentHub
 )
