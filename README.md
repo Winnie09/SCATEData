@@ -8,7 +8,7 @@ The `SCATEData` is an extensive data resources containing the location of genomi
 
 For more details, see our paper describing the `SCATE` package:
 
-- [Zhicheng Ji, Weiqiang Zhou, Hongkai Ji (2019), *Single-cell ATAC-seq Signal Extraction and Enhancement with SCATE*, bioRxiv, v1.](https://www.biorxiv.org/content/10.1101/795609v1)
+- [Zhicheng Ji, Weiqiang Zhou, Wenpin Hou, Hongkai Ji\* (2019), *Single-cell ATAC-seq Signal Extraction and Enhancement with SCATE*, Genome Biol 21, 161 (2020).](https://doi.org/10.1186/s13059-020-02075-3)
 
 ## Installation
 
