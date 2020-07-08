@@ -25,7 +25,7 @@ df <- lapply(af, function(f){
     ResourceName =  f, 
     RDataPath = paste0('SCATEData/',f, ':SCATEData/', sub('.bam', '.bam.bai', f)),
     Tags = 'bam',
-    stringsAsFactors = F)
+    stringsAsFactors = FALSE)
 })
 df1 <- do.call(rbind, df)
 str(df1)
@@ -48,7 +48,7 @@ df2 <- data.frame(
     ResourceName = "hg19.rds", 
     RDataPath = 'SCATEData/hg19.rds',
     Tags = 'hg19:annotation',
-    stringsAsFactors = F)
+    stringsAsFactors = FALSE)
 
 df3 <- data.frame(
     Title = 'mm10 annotation file',
@@ -68,7 +68,7 @@ df3 <- data.frame(
     ResourceName = "mm10.rds", 
     RDataPath = 'SCATEData/mm10.rds',
     Tags = 'mm10:annotation',
-    stringsAsFactors = F)
+    stringsAsFactors = FALSE)
 
 meta = rbind(df1, df2, df3)
 ## Not run: 

@@ -188,7 +188,7 @@ makedatabase <- function(datapath,savepath,bamfile=NULL,cre=NULL,genome='hg19',g
       options(scipen=999)
       clucenter <- matrix(0,nrow=max(oriclu),ncol=ncol(norm))
       for (i in 1:max(oriclu)) {
-            clucenter[i,] <- colMeans(norm[which(oriclu==i),,drop=F])
+            clucenter[i,] <- colMeans(norm[which(oriclu==i),,drop=FALSE])
       }
       
       hclu <- hclust(dist(scalematrix(clucenter)))
