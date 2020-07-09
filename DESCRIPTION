@@ -1,5 +1,5 @@
 Package: SCATEData
-Version: 0.99.4
+Version: 0.99.5
 Title: Data for SCATE (Single-cell ATAC-seq Signal Extraction and Enhancement)
 Description: SCATEData is an ExperimentHub package for SCATE which is a software tool for extracting and enhancing the sparse and discrete Single-cell ATAC-seq Signal.
 Authors@R: c(person("Zhicheng", "Ji", email = "zhichengji@gmail.com", role = "aut"), person("Weiqiang", "Zhou", email = "wzhou14@jhu.edu", role = "aut"), person("Wenpin", "Hou", email = "wp.hou3@gmail.com", role = c("cre","aut"), comment = c(ORCID = "0000-0003-0972-2192")), person("Hongkai", "Ji", email = "hji@jhu.edu", role = "aut"))
