@@ -7,7 +7,10 @@
 # Import all packages listed as Imports or Depends
 import(
   GenomicAlignments,
-  GenomicRanges
+  GenomicRanges,
+  utils
 )
 importFrom(ExperimentHub, createHubAccessors)
-
+importFrom(utils, download.file)
+importFrom(utils, unzip)
+importFrom(utils, read.csv)
