@@ -48,26 +48,26 @@ The package contains the following datasets, which can be used by `SCATE` to ext
     \item \code{\link{SRR1779805.bam}}		
     \item \code{\link{SRR1779959.bam}}		
     \item \code{\link{SRR1780054.bam}}
-    \item \code{\link{GSM1596831.bam.bai}}	
-    \item \code{\link{GSM1596940.bam.bai}}	
-    \item \code{\link{GSM1597041.bam.bai}}	
-    \item \code{\link{SRR1779856.bam.bai}}	
-    \item \code{\link{SRR1779973.bam.bai}}	
-    \item \code{\link{GSM1596840.bam.bai}}	
-    \item \code{\link{GSM1596942.bam.bai}}	
-    \item \code{\link{GSM1597096.bam.bai}}	
-    \item \code{\link{SRR1779874.bam.bai}}	
-    \item \code{\link{SRR1780018.bam.bai}}
-    \item \code{\link{GSM1596874.bam.bai}}	
-    \item \code{\link{GSM1596944.bam.bai}}	
-    \item \code{\link{SRR1779746.bam.bai}}	
-    \item \code{\link{SRR1779956.bam.bai}}	
-    \item \code{\link{SRR1780020.bam.bai}}
-    \item \code{\link{GSM1596881.bam.bai}}	
-    \item \code{\link{GSM1596961.bam.bai}}	
-    \item \code{\link{SRR1779805.bam.bai}}	
-    \item \code{\link{SRR1779959.bam.bai}}	
-    \item \code{\link{SRR1780054.bam.bai}}
+    \item \code{GSM1596831.bam.bai}	
+    \item \code{GSM1596940.bam.bai}	
+    \item \code{GSM1597041.bam.bai}	
+    \item \code{SRR1779856.bam.bai}	
+    \item \code{SRR1779973.bam.bai}	
+    \item \code{GSM1596840.bam.bai}	
+    \item \code{GSM1596942.bam.bai}	
+    \item \code{GSM1597096.bam.bai}	
+    \item \code{SRR1779874.bam.bai}	
+    \item \code{SRR1780018.bam.bai}
+    \item \code{GSM1596874.bam.bai}	
+    \item \code{GSM1596944.bam.bai}	
+    \item \code{SRR1779746.bam.bai}	
+    \item \code{SRR1779956.bam.bai}	
+    \item \code{SRR1780020.bam.bai}
+    \item \code{GSM1596881.bam.bai}	
+    \item \code{GSM1596961.bam.bai}	
+    \item \code{SRR1779805.bam.bai}	
+    \item \code{SRR1779959.bam.bai}	
+    \item \code{SRR1780054.bam.bai}
 }
 
 These `.bam` files are Single-cell ATAC-seq reads and the corresponding `.bam.bai` files are for indexing and searching for the reads in these files.
@@ -80,6 +80,8 @@ Please refer to [`SCATE` tutorial](https://github.com/Winnie09/SCATE) for the lo
 \emph{Citation}
 
 If the `SCATEData` package is useful in your work, please cite the following paper:
-- [Zhicheng Ji, Weiqiang Zhou, Hongkai Ji (2019), *Single-cell ATAC-seq Signal Extraction and Enhancement with SCATE*, bioRxiv, v1.](https://www.biorxiv.org/content/10.1101/795609v1)
+- Zhicheng Ji, Weiqiang Zhou, Wenpin Hou, Hongkai Ji, [*Single-cell ATAC-seq Signal Extraction and Enhancement with SCATE*](https://doi.org/10.1186/s13059-020-02075-3), Genome Biol 21, 161 (2020).
 }
 \keyword{datasets}
+
+
